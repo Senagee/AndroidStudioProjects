@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/code_color_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="代码使用系统自带Color类"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/code_color_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="代码使用8位十六进制"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/code_color_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="代码使用6位十六进制"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/xml_color_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用res文件中的color"
+        android:color="@color/purple_200"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置文本背景色"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+
+</LinearLayout>
