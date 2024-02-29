@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400sp"
+    android:orientation="horizontal"
+    android:background="#ff0000"
+    tools:context=".ViewGravityActivity">
+
+    <!--
+        layout_gravity: 设置与父容器的对其方式
+        gravity:        设置子容器的对其方式
+    -->
+
+    <LinearLayout
+        android:layout_width="0"
+        android:layout_height="200sp"
+        android:layout_gravity="bottom"
+        android:gravity="end|bottom"
+        android:layout_margin="10sp"
+        android:layout_weight="1"
+        android:background="#ffff00"
+        android:padding="10sp">
+
+        <View
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="#ff00ff"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0"
+        android:layout_height="200sp"
+        android:layout_weight="1"
+        android:layout_gravity="top"
+        android:gravity="start|top"
+        android:background="#ffff00"
+        android:layout_margin="10sp"
+        android:padding="10sp" >
+
+
+        <View
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="#ff00ff"
+            />
+    </LinearLayout>
+
+</LinearLayout>
