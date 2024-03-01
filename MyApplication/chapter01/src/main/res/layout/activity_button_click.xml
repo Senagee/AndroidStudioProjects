@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonClickActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="私有监听器"
+        android:textSize="30sp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="公有监听器"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="内容显示"
+        android:textSize="25sp"
+        />
+</LinearLayout>
