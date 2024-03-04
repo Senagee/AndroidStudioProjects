@@ -25,6 +25,12 @@
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter01/src/main/res/layout/activity_view_gravity.xml" value="0.175" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter01/src/main/res/layout/activity_view_margin.xml" value="0.1" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter01/src/main/res/layout/textviewactivity.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_finish.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_jump_first.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_jump_second.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_login_success.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_login_view.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_start.xml" value="0.175" />
       </map>
     </option>
   </component>
