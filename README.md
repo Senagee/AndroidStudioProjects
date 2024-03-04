@@ -1,1 +1,1 @@
-![Image]img/Activity生命周期.png
+![Image](img/Activity生命周期.png)
