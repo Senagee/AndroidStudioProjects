@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HiddenIntentActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到拨号"
+        />
+    <Button
+        android:id="@+id/btn_sendto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到短信"
+        />
+    <Button
+        android:id="@+id/btn_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到我的计算器"
+        />
+</LinearLayout>
