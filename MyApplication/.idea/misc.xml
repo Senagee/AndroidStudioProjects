@@ -26,12 +26,19 @@
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter01/src/main/res/layout/activity_view_margin.xml" value="0.1" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter01/src/main/res/layout/textviewactivity.xml" value="0.1" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_finish.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_get_string.xml" value="0.1234375" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_hidden_intent.xml" value="0.15896739130434784" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_jump_first.xml" value="0.15896739130434784" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_jump_second.xml" value="0.15896739130434784" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_login_success.xml" value="0.15896739130434784" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_login_view.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_receive.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_request.xml" value="0.21518987341772153" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_request_for_result.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_response.xml" value="0.175" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_start.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/content_request.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/fragment_first.xml" value="0.15896739130434784" />
       </map>
     </option>
   </component>

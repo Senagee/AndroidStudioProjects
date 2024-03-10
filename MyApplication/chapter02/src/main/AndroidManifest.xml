@@ -4,14 +4,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/jump"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-
         <activity
-            android:name=".HiddenIntentActivity"
+            android:name=".GetStringActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResponseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestForResultActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
