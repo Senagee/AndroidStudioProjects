@@ -39,6 +39,10 @@
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/activity_start.xml" value="0.175" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/content_request.xml" value="0.15896739130434784" />
         <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter02/src/main/res/layout/fragment_first.xml" value="0.15896739130434784" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter03/src/main/res/drawable/shape_rect.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter03/src/main/res/drawable/shapre_oval.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter03/src/main/res/layout/activity_check_box.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/MyApplication/chapter03/src/main/res/layout/activity_shape.xml" value="0.15896739130434784" />
       </map>
     </option>
   </component>

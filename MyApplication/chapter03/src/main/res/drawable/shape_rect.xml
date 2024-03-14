@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  指定形状内部填充颜色  -->
+    <solid android:color="#ffdd66"/>
+
+    <!--  指定形状的轮廓大小和颜色  -->
+    <stroke
+        android:color="@color/black"
+        android:width="1dp"
+        />
+    <!--  指定圆角半径  -->
+    <corners android:radius="10dp"/>
+</shape>
