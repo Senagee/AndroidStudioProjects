@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditBorderActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="我是普通编辑框"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:hint="我是没有边的编辑框"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_selector"
+        android:hint="我是不普通编辑框"/>
+
+
+
+</LinearLayout>

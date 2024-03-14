@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwitchButtonActivity">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="请点击按钮"
+        />
+
+    <!--
+        现在大多数使用CheckBox代替Switch
+    -->
+    <Switch
+        android:id="@+id/sw_change"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>
