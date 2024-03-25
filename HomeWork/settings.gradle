@@ -12,9 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "My Application"
+rootProject.name = "HomeWork"
 include ':app'
-include ':chapter01'
-include ':chapter02'
-include ':chapter03'
-include ':chapter04'
+include ':week3'

@@ -30,19 +30,15 @@ public class DatePickerActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-
-
             /*
             *
             *
             *
             * */
             case R.id.btn_ok:
-
                 String decs = String.format("你选择的日期为%d年%d月%d日", dp_date.getYear(),dp_date.getMonth() + 1,dp_date.getDayOfMonth());
                 tv_content.setText(decs);
                 break;
-
             case R.id.btn_get:
                 /*
                 *
