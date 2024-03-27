@@ -11,7 +11,7 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
-            android:name=".SQLiteHelperActivity"
+            android:name=".LoginSQLiteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
