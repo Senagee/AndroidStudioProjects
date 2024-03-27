@@ -1,10 +1,13 @@
 package com.example.chapter04.database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import com.example.chapter04.enity.User;
 
 
 public class UserDBHelper extends SQLiteOpenHelper {
@@ -35,8 +38,8 @@ public class UserDBHelper extends SQLiteOpenHelper {
     //创建数据库，创建表结构
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE IF NOT EXISTS TABLE_NAME(" +
-                "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
+        String sql = "CREATE TABLE IF NOT EXISTS " +TABLE_NAME +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
                 "name VARCHAR NOT NULL," +
                 "age INTEGER NOT NULL," +
                 "height FLOAT NOT NULL," +
@@ -79,5 +82,16 @@ public class UserDBHelper extends SQLiteOpenHelper {
             WDB.close();
             WDB = null;
         }
+    }
+
+    //添加
+    public long insert(User user){
+        ContentValues values = new ContentValues();
+        values.put("name", user.getName());
+        values.put("age", user.getAge());
+        values.put("height", user.getHeight());
+        values.put("weight", user.getWeight());
+        values.put("marry", user.isMarry());
+        return WDB.insert(TABLE_NAME, null, values);
     }
 }
