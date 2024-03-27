@@ -2,12 +2,16 @@ package com.example.chapter04.database;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
 import com.example.chapter04.enity.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class UserDBHelper extends SQLiteOpenHelper {
@@ -93,5 +97,37 @@ public class UserDBHelper extends SQLiteOpenHelper {
         values.put("weight", user.getWeight());
         values.put("marry", user.isMarry());
         return WDB.insert(TABLE_NAME, null, values);
+    }
+    //删除
+    public long deleteByName(String name){
+        //删除全部  WDB.delete(TABLE_NAME, null, null);
+        return WDB.delete(TABLE_NAME, "name = ?", new String[]{name});
+    }
+    //修改
+    public long upDateByName(User user){
+        ContentValues values = new ContentValues();
+        values.put("name", user.getName());
+        values.put("age", user.getAge());
+        values.put("height", user.getHeight());
+        values.put("weight", user.getWeight());
+        values.put("marry", user.isMarry());
+
+        return WDB.update(TABLE_NAME, values, "name = ?", new String[]{user.getName()});
+    }
+    //查询所有
+    public List<User> queryAll(){
+        Cursor cursor= RDB.query(TABLE_NAME, null, null, null, null, null, null);
+        List<User> users = new ArrayList<>();
+        while(cursor.moveToNext()){
+            int id = cursor.getInt(0);
+            String name = cursor.getString(1);
+            int age = cursor.getInt(2);
+            float height = cursor.getFloat(3);
+            float weight = cursor.getFloat(4);
+            boolean marry = cursor.getInt(5) == 1;
+            User user = new User(id, name, age, height, weight, marry);
+            users.add(user);
+        }
+        return users;
     }
 }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -11,6 +12,8 @@ import android.widget.EditText;
 import com.example.chapter04.database.UserDBHelper;
 import com.example.chapter04.enity.User;
 import com.example.chapter04.util.ToastUtil;
+
+import java.util.List;
 
 public class SQLiteHelperActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -59,23 +62,32 @@ public class SQLiteHelperActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         String name = et_name.getText().toString();
-        int age = Integer.parseInt(et_age.getText().toString());
-        float height = Float.parseFloat(et_height.getText().toString());
-        float weight = Float.parseFloat(et_weight.getText().toString());
+        String age = et_age.getText().toString();
+        String height = et_height.getText().toString();
+        String weight = et_weight.getText().toString();
         boolean marry = cb_marry.isChecked();
 
         User user = null;
         switch(v.getId()){
             case R.id.btn_save:
-                user = new User(name, age, height, weight, marry);
+
+                user = new User(name, Integer.parseInt(age), Float.parseFloat(height), Float.parseFloat(weight), marry);
                 if(helper.insert(user) > 0)
                     ToastUtil.show(this,"添加成功");
                 break;
             case R.id.btn_delete:
+                if(helper.deleteByName(name) > 0)
+                    ToastUtil.show(this,"删除成功");
                 break;
             case R.id.btn_modify:
+                user = new User(name, Integer.parseInt(age), Float.parseFloat(height), Float.parseFloat(weight), marry);
+                if(helper.upDateByName(user) > 0)
+                    ToastUtil.show(this,"修改成功");
                 break;
             case R.id.btn_check:
+                List<User> users = helper.queryAll();
+                for(User u : users)
+                    Log.d("liu", u.toString());
                 break;
         }
     }
