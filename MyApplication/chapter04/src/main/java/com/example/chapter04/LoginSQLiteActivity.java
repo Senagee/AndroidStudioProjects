@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -34,6 +35,7 @@ public class LoginSQLiteActivity extends AppCompatActivity implements View.OnCli
         et_password.addTextChangedListener(new MyTextWatcher(et_password, 6));
 
         findViewById(R.id.btn_login).setOnClickListener(this);
+        Log.d("liu", "Activity.onCreate");
     }
 
     private void reLoad(){
