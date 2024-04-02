@@ -16,8 +16,8 @@ public interface BookDao {
     @Insert
     void insert(BookInfo... book);
 
-    @Delete
-    void delete(BookInfo... book);
+    @Query("DELETE FROM BookInfo WHERE name = :name")
+    void deleteByName(String name);
 
     @Query("DELETE FROM BookInfo")
     void deleteAll();

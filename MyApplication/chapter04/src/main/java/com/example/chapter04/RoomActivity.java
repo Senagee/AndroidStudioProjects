@@ -56,8 +56,19 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
                 bookDao.insert(book);
                 break;
             case R.id.btn_delete:
+                bookDao.deleteAll();
                 break;
             case R.id.btn_modify:
+                //根据id进行修改
+                //先根据名字找到对应的id，再根据id进行操作
+                BookInfo book2 = bookDao.selectByName(name);
+                book.setId(book2.getId());
+
+                book.setName(name);
+                book.setAuthor(author);
+                book.setPress(press);
+                book.setPrice(Float.parseFloat(price));
+                bookDao.update(book);
                 break;
             case R.id.btn_check:
                 List<BookInfo> books = bookDao.selectAll();
