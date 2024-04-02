@@ -2,7 +2,6 @@ package com.example.chapter04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 
 import com.example.chapter04.database.UserDBHelper;
-import com.example.chapter04.enity.User;
+import com.example.chapter04.entity.User;
 import com.example.chapter04.util.ToastUtil;
 
 import java.util.List;

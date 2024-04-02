@@ -11,7 +11,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 
 import com.example.chapter04.database.LoginDBHelper;
-import com.example.chapter04.enity.LoginInfo;
+import com.example.chapter04.entity.LoginInfo;
 import com.example.chapter04.util.ViewUtil;
 
 public class LoginSQLiteActivity extends AppCompatActivity implements View.OnClickListener {

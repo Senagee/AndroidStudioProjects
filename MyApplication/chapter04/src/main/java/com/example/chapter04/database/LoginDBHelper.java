@@ -6,11 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.chapter04.enity.LoginInfo;
-import com.example.chapter04.enity.User;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.chapter04.entity.LoginInfo;
 
 public class LoginDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME  = "Login.info";

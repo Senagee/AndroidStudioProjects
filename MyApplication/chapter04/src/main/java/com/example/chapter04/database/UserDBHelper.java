@@ -6,9 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
-
-import com.example.chapter04.enity.User;
+import com.example.chapter04.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;

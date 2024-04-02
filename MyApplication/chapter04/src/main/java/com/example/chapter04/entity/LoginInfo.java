@@ -1,4 +1,4 @@
-package com.example.chapter04.enity;
+package com.example.chapter04.entity;
 
 public class LoginInfo {
     private int id;
