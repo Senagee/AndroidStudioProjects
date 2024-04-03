@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 rootProject.name = "HomeWork"
 include ':app'
 include ':week3'
+include ':week2'
+include ':week4'
+include ':week5'

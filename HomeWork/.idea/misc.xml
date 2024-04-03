@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week3/src/main/res/layout/activity_week3.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week2/src/main/res/layout/activity_week2.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week3/src/main/res/layout/activity_week3.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week4/src/main/res/layout/activity_week4.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week4/src/main/res/layout/list_item.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week5/src/main/res/layout/activity_week2.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week5/src/main/res/layout/activity_week3.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/HomeWork/week5/src/main/res/layout/activity_week4.xml" value="0.175" />
       </map>
     </option>
   </component>

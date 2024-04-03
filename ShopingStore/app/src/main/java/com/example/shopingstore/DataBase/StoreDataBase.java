@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 import com.example.shopingstore.dao.GoodsDAO;
 import com.example.shopingstore.entity.Goods;
 
-@Database(entities = {Goods.class}, version = 1)
+@Database(entities = {Goods.class}, version = 1, exportSchema = false)
 public abstract class StoreDataBase extends RoomDatabase {
     public abstract GoodsDAO getGoodsDAO();
 

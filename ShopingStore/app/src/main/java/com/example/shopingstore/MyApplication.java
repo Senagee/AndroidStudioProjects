@@ -24,7 +24,6 @@ public class MyApplication extends Application {
     public static MyApplication getInstance(){
         return mapp;
     }
-    private MyApplication(){};
 
     @Override
     public void onCreate() {
