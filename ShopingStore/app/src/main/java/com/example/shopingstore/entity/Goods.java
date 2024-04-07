@@ -7,7 +7,7 @@ import com.example.shopingstore.R;
 
 import java.util.ArrayList;
 
-@Entity
+@Entity(tableName = "goods")
 public class Goods {
 
     @PrimaryKey(autoGenerate = true)
@@ -66,18 +66,6 @@ public class Goods {
         this.pic = pic;
     }
 
-    @Override
-    public String toString() {
-        return "goods{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                ", picPath='" + picPath + '\'' +
-                ", pic=" + pic +
-                '}';
-    }
-
     private static String[] gNameArray = {
             "iPhone11", "Mate30", "小米10", "OPPO Reno3", "vivo X30", "荣耀30S"
     };
@@ -105,13 +93,24 @@ public class Goods {
         ArrayList<Goods> goodsList = new ArrayList<>();
         for(int i = 0; i < gNameArray.length; i++){
             Goods good = new Goods();
-            good.setId(i);
             good.setName(gNameArray[i]);
             good.setDescription(gDescArray[i]);
-            good.setPrice(gPicArray[i]);
+            good.setPrice(gPriceArray[i]);
             good.setPic(gPicArray[i]);
             goodsList.add(good);
         }
         return goodsList;
+    }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", picPath='" + picPath + '\'' +
+                ", pic=" + pic +
+                '}';
     }
 }

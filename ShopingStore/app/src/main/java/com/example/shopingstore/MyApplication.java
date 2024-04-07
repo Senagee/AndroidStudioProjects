@@ -4,6 +4,7 @@ import android.app.Application;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
+import android.util.Log;
 
 import androidx.room.Room;
 
@@ -14,12 +15,14 @@ import com.example.shopingstore.util.FileUtil;
 import com.example.shopingstore.util.ShareUtil;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class MyApplication extends Application {
 
     private static MyApplication mapp;
 
     private StoreDataBase sdb;
+
 
     public static MyApplication getInstance(){
         return mapp;
@@ -54,11 +57,14 @@ public class MyApplication extends Application {
 
 
             GoodsDAO dao = sdb.getGoodsDAO();
+            ArrayList<Goods> goodsList = Goods.getDefaultList();
+            int i =0;
             //应有事务
-            for(Goods good : Goods.getDefaultList()){
+            for(Goods good : goodsList){
+
                 Bitmap bitmap = BitmapFactory.decodeResource(getResources(), good.getPic());
                 //图片完整路径
-                String path = directory + good.getId() + ".jpg";
+                String path = directory + i++ + ".jpg";
                 //将图片存储到存储卡中
                 FileUtil.saveImage(path, bitmap);
 
@@ -70,4 +76,8 @@ public class MyApplication extends Application {
             }
         }
     }
+    public StoreDataBase getSDB(){
+        return sdb;
+    }
+
 }

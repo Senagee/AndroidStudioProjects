@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/AndroidStudioProjects/ShopingStore/app/src/main/res/drawable/edit_focus.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/ShopingStore/app/src/main/res/drawable/shape_oval_red.xml" value="0.1" />
         <entry key="..\:/Android/AndroidStudioProjects/ShopingStore/app/src/main/res/layout/activity_main.xml" value="0.16041666666666668" />
+        <entry key="..\:/Android/AndroidStudioProjects/ShopingStore/app/src/main/res/layout/item_goods.xml" value="0.175" />
+        <entry key="..\:/Android/AndroidStudioProjects/ShopingStore/app/src/main/res/layout/title_shopping.xml" value="0.22" />
       </map>
     </option>
   </component>
